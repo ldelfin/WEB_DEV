@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basicos de html</title>
+  </head>
+  <body>
+    <!--Comentario-->
+    <!-- Paracomentar cmd /-->
+    <!-- headeres -->
+    <h1>This is a heading</h1>
+    <h2>This a heading 2</h2>
+    <h6>Heading 6</h6>
+    <p>This is a paragraph
+    <p>This is line two</p>
+    <p>This is line three</p>
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <p><strong>This is the text that is in bold</strong></p>
+    <p> <em>Italics</em> </p>
+
+    <h3>Lista ordenada</h3>
+    <ol>
+      <li>First Item</li>
+      <li>Second Item</li>
+    </ol>
+
+    <h3>Lista desordenada</h3>
+    <ul>
+      <li>Hola</li>
+      <li>Hola</li>
+    </ul>
+
+    <h3>Nested list</h3>
+    <ol>
+      <li>Item 1</li>
+      <li>Item2</li>
+      <ul>
+        <li>Im nested inside</li>
+        <li>Also nested</li>
+        <ol>
+          <li><strong>Im really nested</strong></li>
+        </ol>
+      </ul>
+    </ol>
+
+    <h1>Divs And Spans</h1>
+
+    <div class="'Groupone'">
+      <h2>Group one</h2>
+      <p>Quiero <span>estar</span> en el grupo uno</p>
+    </div>
+
+    <p>Div es para crear grupos de muchos elementos, mientras que span es lo mismo pero en una linea</p>
+
+    <h1>Atributos</h1>
+    <h2>Imagen</h2>
+    <!-- <img src="undp-co-logoonu-2016.png" alt=""> -->
+
+    <h2>Links</h2>
+    <a href="newpage.html"> Click me</a>
+    <a href="http://www.facebook.com">Facebook</a>
+
+    <h1>Tables</h1>
+    <table border="2">
+      <thead>
+        <!-- table head  -->
+        <th>Number</th>
+        <th>Color</th>
+        <th>Country</th>
+      </thead>
+      <tr>
+        <!-- table rows -->
+        <td>250</td>
+        <td>red</td>
+        <td>USA</td>
+      </tr>
+      <tr>
+        <td>100</td>
+        <td>blockquote</td>
+        <td>France</td>
+      </tr>
+
+
+    </table>
+
+    <h1>Ejercicio</h1>
+    <table border="1">
+      <thead>
+        <th>Country Name</th>
+        <th>Flag</th>
+        <th>GDP(millions)</th>
+      </thead>
+      <tr>
+        <td>USA</td>
+        <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/190px-Flag_of_the_United_States.svg.png" alt=""> </td>
+        <td>18,561,930</td>
+      </tr>
+      <tr>
+        <td>India</td>
+        <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/150px-Flag_of_India.svg.png" alt=""> </td>
+        <td>2,250,990</td>
+      </tr>
+      <tr>
+        <td>Uk</td>
+        <td> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/200px-Flag_of_the_United_Kingdom.svg.png" alt=""> </td>
+        <td>2,649,890</td>
+      </tr>
+    </table>
+
+    <h1>Forms</h1>
+    <form >
+      <h3>Log In</h3>
+      <input type="email" name="useremail" value="Email Here">
+      <input type="password" name="password" value="">
+      <input type="submit" name="" value="Submit">
+
+      <!-- <input type="number" name="" value=""> -->
+    </form>
+
+    <h1>Choose Color</h1>
+    <form class="" action="index.html" method="post">
+      <input type="color" name="" value="">
+    </form>
+
+    <h1>Accion de la forma</h1>
+
+    <form action="https://facebook.com" method="get">
+      <p>Enter email</p>
+      <input type="text" name="userinput" value="">
+      <input type="submit" name="" value="Submit">
+
+    </form>
+
+    <h1>Labels</h1>
+    <form>
+      <p>Enter sime text</p>
+      <label>
+        Enter text:
+        <input type="text" name="" value="Bloque1">
+      </label>
+      <label>
+        Enter Text
+        <input type="text" name="" value="Bloque2">
+      </label>
+    </form>
+
+    <h1>Labels con for</h1>
+    <form>
+      <label for="userinput">Enter Input</label>
+      <input type="text" name="" value="not required">
+      <input id="userinput" type="text" name="" placeholder="Enter text here" required>
+      <input type="submit" name="" value="">
+    </form>
+
+    <h1>Hotel feedback form</h1>
+
+    <form method="get">
+      <!-- si queremos que funcione radio entonce mismo name -->
+      <h3>Eres de aqui o de afuera?</h3>
+      <label for="inusa">SI</label>
+      <input id="inusa"type="radio" name="loc" value="inside">
+
+      <label for="uotusa">NO</label>
+      <input id="uotusa"type="radio" name="loc" value="outside">
+
+      <h2>Como estuvo el servicio?</h2>
+      <select name="Stars">
+        <option value="Great">3</option>
+        <option value="Okay">2</option>
+        <option value="Bad">1</option>
+      </select>
+      <h2>Algo mas que quieras agregar?</h2>
+      <textarea name="mytext" rows="8" cols="80"></textarea>
+      <a href="newpage.html">
+         <input type="submit" name="" value="Submit">
+      </a>
+    </form>
+
+
+  </body>
+</html>
